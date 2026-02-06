@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how to export extracted emails in TXT and CSV formats with EmailExtractorMax.">
+  <title>Export Options - EmailExtractorMax Documentation</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="36" height="36" rx="8" fill="url(#logo-gradient)"/>
+          <path d="M8 12L18 18L28 12M8 24V12L18 18L28 12V24L18 30L8 24Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="logo-gradient" x1="0" y1="0" x2="36" y2="36">
+              <stop stop-color="#58a6ff"/>
+              <stop offset="1" stop-color="#3fb950"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>EmailExtractorMax</span>
+      </a>
+
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../features.html" class="nav-link">Features</a>
+        <!-- <a href="../pricing.html" class="nav-link">Pricing</a> -->
+        <a href="index.html" class="nav-link active">Docs</a>
+        <a href="../blog/index.html" class="nav-link">Blog</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <a href="https://apps.apple.com/am/app/email-extractor-vius/id1195663537?mt=12" class="btn btn-primary">Download</a>
+      </div>
+
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="docs-layout">
+        <!-- Sidebar -->
+        <aside class="docs-sidebar">
+          <nav>
+            <div class="docs-nav-section">
+              <div class="docs-nav-title">Getting Started</div>
+              <ul class="docs-nav-links">
+                <li><a href="index.html">Introduction</a></li>
+                <li><a href="getting-started.html">Quick Start Guide</a></li>
+              </ul>
+            </div>
+
+            <div class="docs-nav-section">
+              <div class="docs-nav-title">Features</div>
+              <ul class="docs-nav-links">
+                <li><a href="search-engines.html">Search Engines</a></li>
+                <li><a href="local-files.html">Local Files</a></li>
+                <li><a href="export.html" class="active">Export Options</a></li>
+              </ul>
+            </div>
+
+            <div class="docs-nav-section">
+              <div class="docs-nav-title">Support</div>
+              <ul class="docs-nav-links">
+                <li><a href="../faq.html">FAQ</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </aside>
+
+        <!-- Content -->
+        <div class="docs-content">
+          <h1>Export Options</h1>
+
+          <p>
+            After extracting email addresses, EmailExtractorMax lets you export your results in multiple formats for use with other tools and services.
+          </p>
+
+          <h2>Export Formats</h2>
+
+          <h3>TXT (Plain Text)</h3>
+          <p>
+            Exports email addresses as a simple list with one email per line. This is the simplest format and works with any text editor or tool.
+          </p>
+
+          <pre><code>john@example.com
+jane@company.org
+contact@business.net</code></pre>
+
+          <h3>CSV (Comma-Separated Values)</h3>
+          <p>
+            Exports results as a CSV file with customizable columns. This format is ideal for importing into spreadsheet applications, CRM systems, or email marketing tools.
+          </p>
+
+          <pre><code>Email,Source,Date Found
+john@example.com,https://example.com/contact,2024-01-15
+jane@company.org,https://company.org/team,2024-01-15</code></pre>
+
+          <h2>How to Export</h2>
+
+          <ol>
+            <li>Complete your email extraction (search engine or local file scan)</li>
+            <li>Click the <strong>"Export"</strong> button in the toolbar</li>
+            <li>Choose your desired format (TXT or CSV)</li>
+            <li>Select the destination folder and filename</li>
+            <li>Click <strong>"Save"</strong></li>
+          </ol>
+
+          <h2>CSV Column Options</h2>
+
+          <p>
+            When exporting to CSV, you can select which columns to include:
+          </p>
+
+          <ul>
+            <li><strong>Email</strong> - The extracted email address</li>
+            <li><strong>Source URL</strong> - The page where the email was found</li>
+            <li><strong>Page Title</strong> - Title of the source page</li>
+            <li><strong>Search Engine</strong> - Which engine found the result</li>
+            <li><strong>Date</strong> - When the email was extracted</li>
+          </ul>
+
+          <h2>Clipboard Copy</h2>
+
+          <p>
+            For quick access, you can also copy emails directly to your clipboard:
+          </p>
+
+          <ul>
+            <li>Select emails in the results table</li>
+            <li>Right-click and choose "Copy" or use <code>Cmd+C</code></li>
+            <li>Paste into any application</li>
+          </ul>
+
+          <h2>Tips</h2>
+
+          <ul>
+            <li><strong>Use CSV for CRM imports</strong> - Most CRM systems accept CSV files for contact imports</li>
+            <li><strong>Use TXT for simple lists</strong> - When you only need the email addresses without metadata</li>
+            <li><strong>Filter before exporting</strong> - Clean up your results using blacklists and deduplication before exporting</li>
+          </ul>
+
+          <h2>Next Steps</h2>
+
+          <ul>
+            <li><a href="search-engines.html">Learn about search engine extraction</a></li>
+            <li><a href="local-files.html">Scan local files for emails</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p class="footer-copyright">&copy; 2024 SoftLux. All rights reserved.</p>
+        <a href="../privacy.html" class="text-sm text-muted">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
