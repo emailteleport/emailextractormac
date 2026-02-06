@@ -86,7 +86,7 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-success)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
                   <polyline points="20 6 9 17 4 12"/>
                 </svg>
-                <span><strong>Multiple engines:</strong> DuckDuckGo, Bing, Brave, Yahoo</span>
+                <span><strong>Multiple engines:</strong> Google, DuckDuckGo, Bing, Brave, Yahoo</span>
               </li>
               <li style="display: flex; align-items: flex-start; gap: var(--space-3); margin-bottom: var(--space-4);">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-success)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
@@ -164,8 +164,51 @@
       </div>
     </section>
 
+    <!-- Web Crawler -->
+    <section class="section" id="web-crawler">
+      <div class="container">
+        <div class="grid-2 items-center" style="gap: var(--space-16);">
+          <div>
+            <h2>Web Crawler</h2>
+            <p style="margin-top: var(--space-4); font-size: var(--text-lg);">
+              Crawl specific websites by URL and extract all email addresses found. Unlike search engine mode, the web crawler targets individual sites with configurable depth.
+            </p>
+            <ul style="list-style: none; margin-top: var(--space-6);">
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3); margin-bottom: var(--space-4);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-success)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span><strong>URL-based:</strong> Enter any website URL to start crawling</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3); margin-bottom: var(--space-4);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-success)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span><strong>Depth control:</strong> Configure how deep into the site to crawl</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3); margin-bottom: var(--space-4);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-success)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span><strong>Subdirectory scanning:</strong> Limit crawling to specific site sections</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-success)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span><strong>Domain filtering:</strong> Stay within domain or follow external links</span>
+              </li>
+            </ul>
+          </div>
+          <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: var(--space-4);">
+            <img src="assets/images/screenshots/web-crawler.png" alt="Web Crawler Feature" style="border-radius: var(--radius-lg);">
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Email Clients -->
-    <section class="section" id="email-clients">
+    <section class="section" id="email-clients" style="background: var(--bg-secondary);">
       <div class="container">
         <div class="grid-2 items-center" style="gap: var(--space-16);">
           <div>
@@ -202,6 +245,43 @@
           </div>
           <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: var(--space-4);">
             <img src="assets/images/screenshots/email-clients.png" alt="Email Clients Feature" style="border-radius: var(--radius-lg);">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plain Text -->
+    <section class="section" id="plain-text">
+      <div class="container">
+        <div class="grid-2 items-center" style="gap: var(--space-16);">
+          <div style="order: 2;">
+            <h2>Plain Text Mode</h2>
+            <p style="margin-top: var(--space-4); font-size: var(--text-lg);">
+              Paste any text directly into the app and instantly extract all email addresses. The fastest way to pull emails from copied content.
+            </p>
+            <ul style="list-style: none; margin-top: var(--space-6);">
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3); margin-bottom: var(--space-4);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-success)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span><strong>Instant extraction:</strong> Paste text and get emails immediately</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3); margin-bottom: var(--space-4);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-success)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span><strong>Any source:</strong> Works with text from any application or website</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-success)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span><strong>No files needed:</strong> Skip file saving — just paste and extract</span>
+              </li>
+            </ul>
+          </div>
+          <div style="order: 1; background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: var(--space-4);">
+            <img src="assets/images/screenshots/plain-text.png" alt="Plain Text Feature" style="border-radius: var(--radius-lg);">
           </div>
         </div>
       </div>
@@ -282,16 +362,16 @@
             <p class="card-description">Built-in protection against being blocked by search engines.</p>
           </div>
           <div class="card">
-            <h4 class="card-title" style="font-size: var(--text-base);">User-Agent Rotation</h4>
-            <p class="card-description">Customized user agents for each search engine for reliable results.</p>
+            <h4 class="card-title" style="font-size: var(--text-base);">12 Languages</h4>
+            <p class="card-description">Full interface in EN, RU, DE, FR, ES, IT, PT, PL, HI, JA, AR, and ZH.</p>
           </div>
           <div class="card">
             <h4 class="card-title" style="font-size: var(--text-base);">Dark & Light Themes</h4>
             <p class="card-description">Works with your system preferences. Comfortable viewing day or night.</p>
           </div>
           <div class="card">
-            <h4 class="card-title" style="font-size: var(--text-base);">Page Title Extraction</h4>
-            <p class="card-description">Capture the context where emails were found for better organization.</p>
+            <h4 class="card-title" style="font-size: var(--text-base);">Encoded Email Decoding</h4>
+            <p class="card-description">Detects 50+ obfuscation patterns for @ and . symbols across 20+ languages.</p>
           </div>
         </div>
       </div>
