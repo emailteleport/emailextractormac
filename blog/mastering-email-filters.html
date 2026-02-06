@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A complete guide to EmailExtractorMax's filtering system - blacklists, whitelists, and pattern matching explained.">
+  <title>Mastering Email Filters: A Complete Guide - EmailExtractorMax Blog</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="36" height="36" rx="8" fill="url(#logo-gradient)"/>
+          <path d="M8 12L18 18L28 12M8 24V12L18 18L28 12V24L18 30L8 24Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="logo-gradient" x1="0" y1="0" x2="36" y2="36">
+              <stop stop-color="#58a6ff"/>
+              <stop offset="1" stop-color="#3fb950"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>EmailExtractorMax</span>
+      </a>
+
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../features.html" class="nav-link">Features</a>
+        <a href="../docs/index.html" class="nav-link">Docs</a>
+        <a href="index.html" class="nav-link active">Blog</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <a href="https://apps.apple.com/am/app/email-extractor-vius/id1195663537?mt=12" class="btn btn-primary">Download</a>
+      </div>
+
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main style="padding-top: var(--header-height);">
+    <article class="section" style="padding-top: var(--space-16);">
+      <div class="container" style="max-width: 800px;">
+        <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: var(--text-sm);">&larr; Back to Blog</a>
+
+        <div style="margin-top: var(--space-6);">
+          <div style="color: var(--text-muted); font-size: var(--text-sm);">December 12, 2023</div>
+          <h1 style="margin-top: var(--space-3);">Mastering Email Filters: A Complete Guide</h1>
+          <p class="text-lg" style="color: var(--text-secondary); margin-top: var(--space-4);">
+            EmailExtractorMax's filtering system is one of its most powerful features. Here's how to use blacklists, whitelists, and pattern matching to get exactly the results you need.
+          </p>
+        </div>
+
+        <div class="docs-content" style="margin-top: var(--space-8);">
+          <h2>Three Types of Filters</h2>
+          <p>
+            EmailExtractorMax provides three filtering mechanisms that work together:
+          </p>
+          <ol>
+            <li><strong>Email Name Blacklist</strong> — Filters by the local part (before @) of the email</li>
+            <li><strong>Domain Blacklist</strong> — Filters by the domain (after @) of the email</li>
+            <li><strong>Whitelist</strong> — Only keeps emails matching specific patterns</li>
+          </ol>
+
+          <h2>Email Name Blacklist</h2>
+          <p>
+            The email name blacklist filters out addresses based on the part before the @ symbol. This is useful for excluding generic, automated, or role-based addresses.
+          </p>
+          <p><strong>Common entries to blacklist:</strong></p>
+          <ul>
+            <li><code>noreply</code>, <code>no-reply</code>, <code>donotreply</code> — Automated senders</li>
+            <li><code>info</code>, <code>support</code>, <code>sales</code>, <code>admin</code> — Generic role-based addresses</li>
+            <li><code>abuse</code>, <code>postmaster</code>, <code>webmaster</code> — Technical role addresses</li>
+            <li><code>unsubscribe</code>, <code>bounce</code>, <code>mailer-daemon</code> — System addresses</li>
+          </ul>
+          <p>
+            EmailExtractorMax comes with many of these pre-configured, but you can add your own patterns in the filter settings.
+          </p>
+
+          <h2>Domain Blacklist</h2>
+          <p>
+            The domain blacklist lets you exclude entire domains from your results. Use it for:
+          </p>
+          <ul>
+            <li><strong>Example/test domains:</strong> example.com, test.com, localhost</li>
+            <li><strong>Disposable email providers:</strong> guerrillamail.com, mailinator.com, tempmail.com</li>
+            <li><strong>Your own domains:</strong> If you're extracting competitors' contacts, exclude your own domain</li>
+            <li><strong>Known irrelevant domains:</strong> Domains you've determined aren't useful for your purpose</li>
+          </ul>
+
+          <h2>Whitelists</h2>
+          <p>
+            Whitelists work in the opposite direction — instead of excluding unwanted results, they only keep results that match your patterns. This is especially useful when you want emails from very specific domains.
+          </p>
+          <p>
+            For example, if you only want emails from .edu domains, add <code>.edu</code> to your whitelist. Only emails from educational institutions will be kept.
+          </p>
+
+          <h2>URL-Based Filtering</h2>
+          <p>
+            In addition to email-based filters, EmailExtractorMax can filter by source URL. This is useful in Search Engine mode to skip certain types of pages:
+          </p>
+          <ul>
+            <li>Skip JavaScript files, CSS files, and images</li>
+            <li>Skip known login/authentication pages</li>
+            <li>Focus only on specific sections of a website</li>
+          </ul>
+
+          <h2>Combining Filters for Best Results</h2>
+          <p>
+            The real power comes from combining filters. Here's an example workflow:
+          </p>
+          <ol>
+            <li><strong>Start with the name blacklist</strong> to remove noreply, info, and support addresses</li>
+            <li><strong>Add a domain blacklist</strong> for known disposable email providers and irrelevant domains</li>
+            <li><strong>Optionally add a whitelist</strong> if you need emails from specific domains only</li>
+            <li><strong>Run your extraction</strong> — results will be pre-filtered automatically</li>
+          </ol>
+          <p>
+            Filters are applied in real-time during extraction, so you get clean results from the start without any post-processing.
+          </p>
+
+          <h2>Tips for Filter Configuration</h2>
+          <ul>
+            <li><strong>Start broad, then narrow down</strong> — It's easier to add filters than to re-run an extraction because you filtered too aggressively</li>
+            <li><strong>Review results periodically</strong> — After a few extractions, check what kinds of unwanted emails are slipping through and add them to your blacklist</li>
+            <li><strong>Save your filter presets</strong> — If you frequently target the same industry or type of contact, save your filter configuration for reuse</li>
+          </ul>
+        </div>
+
+        <div style="margin-top: var(--space-12); padding-top: var(--space-8); border-top: 1px solid var(--border-color);">
+          <a href="index.html" style="color: var(--accent-primary); text-decoration: none;">&larr; Back to all posts</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p class="footer-copyright">&copy; 2024 SoftLux. All rights reserved.</p>
+        <a href="../privacy.html" class="text-sm text-muted">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

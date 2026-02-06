@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Introducing EmailExtractorMax - the most powerful email extraction tool for macOS with 6 extraction modes and 12 languages.">
+  <title>EmailExtractorMax 1.0 Launch - EmailExtractorMax Blog</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="36" height="36" rx="8" fill="url(#logo-gradient)"/>
+          <path d="M8 12L18 18L28 12M8 24V12L18 18L28 12V24L18 30L8 24Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="logo-gradient" x1="0" y1="0" x2="36" y2="36">
+              <stop stop-color="#58a6ff"/>
+              <stop offset="1" stop-color="#3fb950"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>EmailExtractorMax</span>
+      </a>
+
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../features.html" class="nav-link">Features</a>
+        <a href="../docs/index.html" class="nav-link">Docs</a>
+        <a href="index.html" class="nav-link active">Blog</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <a href="https://apps.apple.com/am/app/email-extractor-vius/id1195663537?mt=12" class="btn btn-primary">Download</a>
+      </div>
+
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main style="padding-top: var(--header-height);">
+    <article class="section" style="padding-top: var(--space-16);">
+      <div class="container" style="max-width: 800px;">
+        <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: var(--text-sm);">&larr; Back to Blog</a>
+
+        <div style="margin-top: var(--space-6);">
+          <div style="color: var(--text-muted); font-size: var(--text-sm);">November 28, 2023</div>
+          <h1 style="margin-top: var(--space-3);">EmailExtractorMax 1.0 Launch</h1>
+          <p class="text-lg" style="color: var(--text-secondary); margin-top: var(--space-4);">
+            We're excited to introduce EmailExtractorMax — the most powerful email extraction tool built specifically for macOS.
+          </p>
+        </div>
+
+        <div class="docs-content" style="margin-top: var(--space-8);">
+          <h2>Why We Built EmailExtractorMax</h2>
+          <p>
+            Finding email addresses shouldn't require multiple tools, complex setups, or cloud subscriptions. We wanted to build a single, native macOS application that handles every email extraction scenario — from searching the web to scanning local files to pulling contacts from your email client.
+          </p>
+          <p>
+            The result is EmailExtractorMax: a fast, powerful, and private email extraction tool that runs entirely on your Mac.
+          </p>
+
+          <h2>6 Extraction Modes</h2>
+          <p>
+            EmailExtractorMax ships with six distinct ways to find email addresses:
+          </p>
+
+          <h3>1. Search Engines</h3>
+          <p>
+            Search across Google, DuckDuckGo, Bing, Brave, and Yahoo simultaneously. Our parallel search engine queries all selected engines at once and visits each result page to extract emails in real-time. Google alone offers 30+ country-specific variants for localized results.
+          </p>
+
+          <h3>2. Web Crawler</h3>
+          <p>
+            Enter any website URL and EmailExtractorMax will crawl it for email addresses. Configure the crawl depth, limit to specific subdirectories, and choose whether to follow external links or stay within the domain.
+          </p>
+
+          <h3>3. Local Files</h3>
+          <p>
+            Scan PDF, Word (.docx), Excel (.xlsx), text files, and more. Drag and drop files or entire folders into the app. Multi-threaded processing ensures fast results even with large collections.
+          </p>
+
+          <h3>4. Mac Mail</h3>
+          <p>
+            Extract email addresses directly from your Apple Mail messages. Choose to scan headers only (From, To, Cc, Bcc), body only, or both. Filter by subject line to focus on specific conversations.
+          </p>
+
+          <h3>5. Outlook</h3>
+          <p>
+            Scan your Outlook for Mac profiles and process .olm archive files. EmailExtractorMax automatically handles Outlook's unique file format and encoding.
+          </p>
+
+          <h3>6. Plain Text</h3>
+          <p>
+            The simplest mode: paste any text into the app and instantly extract all email addresses found. No files, no URLs — just paste and go.
+          </p>
+
+          <h2>Advanced Filtering</h2>
+          <p>
+            Every extraction mode benefits from EmailExtractorMax's filtering system:
+          </p>
+          <ul>
+            <li><strong>Email name blacklist</strong> — Skip noreply, info, support, and other generic addresses</li>
+            <li><strong>Domain blacklist</strong> — Exclude entire domains from results</li>
+            <li><strong>Whitelists</strong> — Keep only emails matching specific patterns</li>
+            <li><strong>URL filtering</strong> — Skip specific types of pages during web extraction</li>
+            <li><strong>Automatic deduplication</strong> — No duplicate emails in your results</li>
+          </ul>
+
+          <h2>Encoded Email Decoding</h2>
+          <p>
+            Many websites obfuscate email addresses to prevent extraction. They replace <code>@</code> with "at", "[at]", "(at)" and <code>.</code> with "dot", "[dot]", "(dot)" — among many other patterns.
+          </p>
+          <p>
+            EmailExtractorMax recognizes 50+ obfuscation patterns across 20+ languages. It finds emails that simpler tools miss entirely.
+          </p>
+
+          <h2>12 Languages</h2>
+          <p>
+            The full interface is available in: English, Russian, German, French, Spanish, Italian, Portuguese, Polish, Hindi, Japanese, Arabic, and Chinese. The app automatically matches your macOS system language.
+          </p>
+
+          <h2>Flexible Export</h2>
+          <p>
+            Export your results as TXT (one email per line) or CSV with customizable delimiters (comma, semicolon, or tab) and selectable columns. Ready for import into any CRM, spreadsheet, or email tool.
+          </p>
+
+          <h2>Native macOS</h2>
+          <p>
+            EmailExtractorMax is built natively for macOS and runs on both Intel and Apple Silicon (M1/M2/M3/M4) Macs. It requires macOS 11 (Big Sur) or later and supports both dark and light themes.
+          </p>
+
+          <h2>Get Started</h2>
+          <p>
+            EmailExtractorMax is available on the <a href="https://apps.apple.com/am/app/email-extractor-vius/id1195663537?mt=12">Mac App Store</a>. Download it today and start extracting emails in minutes.
+          </p>
+        </div>
+
+        <div style="margin-top: var(--space-12); padding-top: var(--space-8); border-top: 1px solid var(--border-color);">
+          <a href="index.html" style="color: var(--accent-primary); text-decoration: none;">&larr; Back to all posts</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p class="footer-copyright">&copy; 2024 SoftLux. All rights reserved.</p>
+        <a href="../privacy.html" class="text-sm text-muted">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
